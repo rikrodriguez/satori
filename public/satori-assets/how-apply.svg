@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.55" stop-color="#fff2f7"/>
+      <stop offset="1" stop-color="#edf8fb"/>
+    </linearGradient>
+    <linearGradient id="jar" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.55" stop-color="#f8feff"/>
+      <stop offset="1" stop-color="#dff2f7"/>
+    </linearGradient>
+    <linearGradient id="cap" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e7f2f5"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="30" stdDeviation="28" flood-color="#004155" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  
+    <rect width="1200" height="900" fill="url(#bg)"/>
+    
+    <rect x="80" y="74" width="150" height="48" rx="24" fill="#ffffff" stroke="#d9e3e7"/>
+    <text x="155" y="105" text-anchor="middle" fill="#f77ea7" font-family="Arial, sans-serif" font-size="16" font-weight="700">STEP 2</text>
+    
+  <g>
+    <ellipse cx="346.5" cy="318.25" rx="137.75" ry="171" fill="#f0c7b2"/>
+    <path d="M 251.5 175.75 C 327.5 90.25, 468.09999999999997 114, 489 266 C 422.5 204.25, 308.5 209, 251.5 175.75" fill="#004155" opacity="0.9"/>
+    <path d="M 291.4 327.75 Q 322.75 315.4 354.1 327.75" fill="none" stroke="#004155" stroke-width="3.8" stroke-linecap="round"/>
+    <path d="M 394 327.75 Q 426.29999999999995 315.4 458.59999999999997 327.75" fill="none" stroke="#004155" stroke-width="3.8" stroke-linecap="round"/>
+    <path d="M 347.45 356.25 Q 337 400.9 363.6 403.75" fill="none" stroke="#00657d" stroke-width="2.8499999999999996" stroke-linecap="round"/>
+    <path d="M 308.5 446.5 Q 365.5 476.9 424.4 446.5" fill="none" stroke="#9a4e4e" stroke-width="4.75" stroke-linecap="round"/>
+    
+  </g>
+    
+  <g filter="url(#shadow)">
+    <rect x="737.5" y="310" width="140" height="43" rx="14" fill="url(#cap)" stroke="#d9e3e7" stroke-width="1"/>
+    <rect x="715" y="348" width="185" height="210" rx="23" fill="url(#jar)" stroke="#d9e3e7" stroke-width="1"/>
+    <text x="807.5" y="413" text-anchor="middle" fill="#4d91aa" font-family="Georgia, serif" font-size="29" letter-spacing="2">SATORI</text>
+    <text x="807.5" y="433" text-anchor="middle" fill="#00657d" font-family="Arial, sans-serif" font-size="8.5">Organic Skin Care</text>
+    <line x1="758" y1="449" x2="857" y2="449" stroke="#00657d" stroke-width="1"/>
+    <text x="807.5" y="475.5" text-anchor="middle" fill="#004155" font-family="Arial, sans-serif" font-size="12" font-weight="700">Satori Cream</text>
+    <text x="807.5" y="496" text-anchor="middle" fill="#00657d" font-family="Arial, sans-serif" font-size="8.5">Daily Renewal Cream</text>
+    <text x="807.5" y="518" text-anchor="middle" fill="#00657d" font-family="Arial, sans-serif" font-size="8.5">100 ml</text>
+  </g>
+    <path d="M735 278 C670 242 620 258 585 314" fill="none" stroke="#f77ea7" stroke-width="16" stroke-linecap="round"/>
+    <text x="110" y="760" fill="#004155" font-family="Arial, sans-serif" font-size="48" font-weight="700">Massage Satori Cream</text>
+  
+</svg>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="900" viewBox="0 0 900 900" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.55" stop-color="#fff2f7"/>
+      <stop offset="1" stop-color="#edf8fb"/>
+    </linearGradient>
+    <linearGradient id="jar" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.55" stop-color="#f8feff"/>
+      <stop offset="1" stop-color="#dff2f7"/>
+    </linearGradient>
+    <linearGradient id="cap" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e7f2f5"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="30" stdDeviation="28" flood-color="#004155" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  
+    <rect width="900" height="900" fill="#fff7f2"/>
+    
+    <rect x="44" y="44" width="150" height="48" rx="24" fill="#ffffff" stroke="#d9e3e7"/>
+    <text x="119" y="75" text-anchor="middle" fill="#f77ea7" font-family="Arial, sans-serif" font-size="16" font-weight="700">BEFORE</text>
+    
+  <g>
+    <ellipse cx="400.4" cy="379.20000000000005" rx="162.4" ry="201.60000000000002" fill="#dca082"/>
+    <path d="M 288.4 211.2 C 378 110.4, 543.76 138.4, 568.4000000000001 317.6 C 490 244.8, 355.6 250.4, 288.4 211.2" fill="#004155" opacity="0.9"/>
+    <path d="M 335.44 390.40000000000003 Q 372.4 375.84000000000003 409.36 390.40000000000003" fill="none" stroke="#004155" stroke-width="4.48" stroke-linecap="round"/>
+    <path d="M 456.40000000000003 390.40000000000003 Q 494.48 375.84000000000003 532.5600000000001 390.40000000000003" fill="none" stroke="#004155" stroke-width="4.48" stroke-linecap="round"/>
+    <path d="M 401.52 424.00000000000006 Q 389.20000000000005 476.64000000000004 420.56000000000006 480.00000000000006" fill="none" stroke="#00657d" stroke-width="3.3600000000000003" stroke-linecap="round"/>
+    <path d="M 355.6 530.4000000000001 Q 422.8 566.24 492.24 530.4000000000001" fill="none" stroke="#9a4e4e" stroke-width="5.6000000000000005" stroke-linecap="round"/>
+    <path d="M 322 328.8 Q 428.40000000000003 306.4 537.04 328.8" fill="none" stroke="#a96a5d" stroke-width="3.3600000000000003" opacity="0.65"/>
+    <path d="M 333.20000000000005 351.20000000000005 Q 428.40000000000003 334.40000000000003 523.6 351.20000000000005" fill="none" stroke="#a96a5d" stroke-width="2.8000000000000003" opacity="0.55"/>
+    <path d="M 503.44000000000005 396 C 548.24 407.20000000000005, 561.6800000000001 431.84000000000003, 579.6 457.6" fill="none" stroke="#a96a5d" stroke-width="3.3600000000000003" opacity="0.55"/>
+  </g>
+    <text x="450" y="805" text-anchor="middle" fill="#004155" font-family="Arial, sans-serif" font-size="34" font-weight="700">Visible dryness + texture</text>
+  
+</svg>

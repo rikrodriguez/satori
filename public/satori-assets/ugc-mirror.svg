@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.55" stop-color="#fff2f7"/>
+      <stop offset="1" stop-color="#edf8fb"/>
+    </linearGradient>
+    <linearGradient id="jar" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.55" stop-color="#f8feff"/>
+      <stop offset="1" stop-color="#dff2f7"/>
+    </linearGradient>
+    <linearGradient id="cap" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e7f2f5"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="30" stdDeviation="28" flood-color="#004155" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  
+    <rect width="1200" height="1200" fill="#fff2f7"/>
+    <rect x="170" y="120" width="620" height="860" rx="56" fill="#fff" stroke="#d9e3e7"/>
+    <rect x="214" y="164" width="532" height="772" rx="42" fill="#edf8fb"/>
+    
+  <g>
+    <ellipse cx="441.4" cy="446.20000000000005" rx="133.4" ry="165.6" fill="#f0c7b2"/>
+    <path d="M 349.4 308.2 C 423 225.4, 559.1600000000001 248.4, 579.4000000000001 395.6 C 515 335.8, 404.6 340.4, 349.4 308.2" fill="#004155" opacity="0.9"/>
+    <path d="M 388.04 455.4 Q 418.4 443.44 448.76 455.4" fill="none" stroke="#004155" stroke-width="3.68" stroke-linecap="round"/>
+    <path d="M 487.4 455.4 Q 518.6800000000001 443.44 549.96 455.4" fill="none" stroke="#004155" stroke-width="3.68" stroke-linecap="round"/>
+    <path d="M 442.32 483 Q 432.20000000000005 526.24 457.96000000000004 529" fill="none" stroke="#00657d" stroke-width="2.7600000000000002" stroke-linecap="round"/>
+    <path d="M 404.6 570.4000000000001 Q 459.8 599.84 516.84 570.4000000000001" fill="none" stroke="#9a4e4e" stroke-width="4.6000000000000005" stroke-linecap="round"/>
+    
+  </g>
+    
+  <g filter="url(#shadow)">
+    <rect x="804.3" y="575" width="151.20000000000002" height="46.440000000000005" rx="15.120000000000001" fill="url(#cap)" stroke="#d9e3e7" stroke-width="1.08"/>
+    <rect x="780" y="616.0400000000001" width="199.8" height="226.8" rx="24.840000000000003" fill="url(#jar)" stroke="#d9e3e7" stroke-width="1.08"/>
+    <text x="879.9" y="686.24" text-anchor="middle" fill="#4d91aa" font-family="Georgia, serif" font-size="31.32" letter-spacing="2">SATORI</text>
+    <text x="879.9" y="707.84" text-anchor="middle" fill="#00657d" font-family="Arial, sans-serif" font-size="9.18">Organic Skin Care</text>
+    <line x1="826.44" y1="725.1200000000001" x2="933.3599999999999" y2="725.1200000000001" stroke="#00657d" stroke-width="1.08"/>
+    <text x="879.9" y="753.74" text-anchor="middle" fill="#004155" font-family="Arial, sans-serif" font-size="12.96" font-weight="700">Satori Cream</text>
+    <text x="879.9" y="775.8800000000001" text-anchor="middle" fill="#00657d" font-family="Arial, sans-serif" font-size="9.18">Daily Renewal Cream</text>
+    <text x="879.9" y="799.6400000000001" text-anchor="middle" fill="#00657d" font-family="Arial, sans-serif" font-size="9.18">100 ml</text>
+  </g>
+    
+    <rect x="730" y="160" width="281" height="48" rx="24" fill="#ffffff" stroke="#d9e3e7"/>
+    <text x="870.5" y="191" text-anchor="middle" fill="#f77ea7" font-family="Arial, sans-serif" font-size="16" font-weight="700">UGC: NIGHTLY RITUAL</text>
+  
+</svg>

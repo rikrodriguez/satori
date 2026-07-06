@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.55" stop-color="#fff2f7"/>
+      <stop offset="1" stop-color="#edf8fb"/>
+    </linearGradient>
+    <linearGradient id="jar" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.55" stop-color="#f8feff"/>
+      <stop offset="1" stop-color="#dff2f7"/>
+    </linearGradient>
+    <linearGradient id="cap" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e7f2f5"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="30" stdDeviation="28" flood-color="#004155" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  
+    <rect width="1200" height="900" fill="url(#bg)"/>
+    
+    <rect x="80" y="74" width="150" height="48" rx="24" fill="#ffffff" stroke="#d9e3e7"/>
+    <text x="155" y="105" text-anchor="middle" fill="#f77ea7" font-family="Arial, sans-serif" font-size="16" font-weight="700">STEP 1</text>
+    <circle cx="380" cy="440" r="178" fill="#f0c7b2"/>
+    <path d="M270 355 Q380 295 490 355" fill="none" stroke="#004155" stroke-width="18" stroke-linecap="round"/>
+    <circle cx="680" cy="416" r="62" fill="#fff" stroke="#d9e3e7" stroke-width="4"/>
+    <circle cx="760" cy="352" r="38" fill="#fff" stroke="#d9e3e7" stroke-width="4"/>
+    <text x="110" y="760" fill="#004155" font-family="Arial, sans-serif" font-size="48" font-weight="700">Cleanse gently</text>
+  
+</svg>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.55" stop-color="#fff2f7"/>
+      <stop offset="1" stop-color="#edf8fb"/>
+    </linearGradient>
+    <linearGradient id="jar" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.55" stop-color="#f8feff"/>
+      <stop offset="1" stop-color="#dff2f7"/>
+    </linearGradient>
+    <linearGradient id="cap" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e7f2f5"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="30" stdDeviation="28" flood-color="#004155" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  
+    <rect width="1200" height="1200" fill="url(#bg)"/>
+    
+    <rect x="86" y="88" width="177" height="48" rx="24" fill="#ffffff" stroke="#d9e3e7"/>
+    <text x="174.5" y="119" text-anchor="middle" fill="#f77ea7" font-family="Arial, sans-serif" font-size="16" font-weight="700">SCIENCE-LED</text>
+    <rect x="118" y="232" width="380" height="500" rx="30" fill="#fff" stroke="#d9e3e7"/>
+    <path d="M248 325 v180 c0 98 122 98 122 0 V325" fill="none" stroke="#00657d" stroke-width="22" stroke-linecap="round"/>
+    <circle cx="258" cy="558" r="18" fill="#f9c5d7"/>
+    <circle cx="328" cy="585" r="14" fill="#4d91aa"/>
+    
+  <g filter="url(#shadow)">
+    <rect x="648.5" y="278" width="252" height="77.4" rx="25.2" fill="url(#cap)" stroke="#d9e3e7" stroke-width="1.8"/>
+    <rect x="608" y="346.4" width="333" height="378" rx="41.4" fill="url(#jar)" stroke="#d9e3e7" stroke-width="1.8"/>
+    <text x="774.5" y="463.4" text-anchor="middle" fill="#4d91aa" font-family="Georgia, serif" font-size="52.2" letter-spacing="2">SATORI</text>
+    <text x="774.5" y="499.4" text-anchor="middle" fill="#00657d" font-family="Arial, sans-serif" font-size="15.3">Organic Skin Care</text>
+    <line x1="685.4" y1="528.2" x2="863.6" y2="528.2" stroke="#00657d" stroke-width="1.8"/>
+    <text x="774.5" y="575.9" text-anchor="middle" fill="#004155" font-family="Arial, sans-serif" font-size="21.6" font-weight="700">Satori Cream</text>
+    <text x="774.5" y="612.8" text-anchor="middle" fill="#00657d" font-family="Arial, sans-serif" font-size="15.3">Daily Renewal Cream</text>
+    <text x="774.5" y="652.4" text-anchor="middle" fill="#00657d" font-family="Arial, sans-serif" font-size="15.3">100 ml</text>
+  </g>
+    <text x="120" y="850" fill="#004155" font-family="Arial, sans-serif" font-size="42" font-weight="700">Nobel-nominated skincare thinking</text>
+    <text x="120" y="910" fill="#323435" font-family="Arial, sans-serif" font-size="26">translated into one clean daily cream.</text>
+  
+</svg>

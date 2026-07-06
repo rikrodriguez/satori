@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.55" stop-color="#fff2f7"/>
+      <stop offset="1" stop-color="#edf8fb"/>
+    </linearGradient>
+    <linearGradient id="jar" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.55" stop-color="#f8feff"/>
+      <stop offset="1" stop-color="#dff2f7"/>
+    </linearGradient>
+    <linearGradient id="cap" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e7f2f5"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="30" stdDeviation="28" flood-color="#004155" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  
+    <rect width="1200" height="1200" fill="url(#bg)"/>
+    
+    <rect x="86" y="88" width="190" height="48" rx="24" fill="#ffffff" stroke="#d9e3e7"/>
+    <text x="181" y="119" text-anchor="middle" fill="#f77ea7" font-family="Arial, sans-serif" font-size="16" font-weight="700">ABOUT SATORI</text>
+    
+  <g>
+    <ellipse cx="298.5" cy="434.75" rx="152.25" ry="189" fill="#f0c7b2"/>
+    <path d="M 193.5 277.25 C 277.5 182.75, 432.90000000000003 209, 456 377 C 382.5 308.75, 256.5 314, 193.5 277.25" fill="#004155" opacity="0.9"/>
+    <path d="M 237.60000000000002 445.25 Q 272.25 431.6 306.9 445.25" fill="none" stroke="#004155" stroke-width="4.2" stroke-linecap="round"/>
+    <path d="M 351 445.25 Q 386.7 431.6 422.40000000000003 445.25" fill="none" stroke="#004155" stroke-width="4.2" stroke-linecap="round"/>
+    <path d="M 299.55 476.75 Q 288 526.1 317.4 529.25" fill="none" stroke="#00657d" stroke-width="3.1500000000000004" stroke-linecap="round"/>
+    <path d="M 256.5 576.5 Q 319.5 610.1 384.6 576.5" fill="none" stroke="#9a4e4e" stroke-width="5.25" stroke-linecap="round"/>
+    
+  </g>
+    
+  <g filter="url(#shadow)">
+    <rect x="672.4" y="330" width="201.6" height="61.919999999999995" rx="20.16" fill="url(#cap)" stroke="#d9e3e7" stroke-width="1.44"/>
+    <rect x="640" y="384.72" width="266.4" height="302.4" rx="33.12" fill="url(#jar)" stroke="#d9e3e7" stroke-width="1.44"/>
+    <text x="773.2" y="478.32" text-anchor="middle" fill="#4d91aa" font-family="Georgia, serif" font-size="41.76" letter-spacing="2">SATORI</text>
+    <text x="773.2" y="507.12" text-anchor="middle" fill="#00657d" font-family="Arial, sans-serif" font-size="12.24">Organic Skin Care</text>
+    <line x1="701.92" y1="530.1600000000001" x2="844.48" y2="530.1600000000001" stroke="#00657d" stroke-width="1.44"/>
+    <text x="773.2" y="568.32" text-anchor="middle" fill="#004155" font-family="Arial, sans-serif" font-size="17.28" font-weight="700">Satori Cream</text>
+    <text x="773.2" y="597.84" text-anchor="middle" fill="#00657d" font-family="Arial, sans-serif" font-size="12.24">Daily Renewal Cream</text>
+    <text x="773.2" y="629.52" text-anchor="middle" fill="#00657d" font-family="Arial, sans-serif" font-size="12.24">100 ml</text>
+  </g>
+    <text x="120" y="885" fill="#004155" font-family="Arial, sans-serif" font-size="42" font-weight="700">Science-led skincare, simplified.</text>
+    <text x="120" y="948" fill="#323435" font-family="Arial, sans-serif" font-size="27">Premium authority. Daily consistency. Visible-looking glow.</text>
+  
+</svg>

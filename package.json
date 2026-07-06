@@ -1,0 +1,44 @@
+{
+  "name": "satori-cream-funnel",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "build:hostinger": "NEXT_OUTPUT=export next build",
+    "audit:hostinger": "node scripts/audit-hostinger-static.mjs",
+    "verify:hostinger-package": "node scripts/verify-hostinger-package.mjs",
+    "prepare:hostinger-upload": "node scripts/prepare-hostinger-public-html.mjs",
+    "package:hostinger": "npm run build:hostinger && npm run audit:hostinger && node scripts/create-hostinger-package.mjs && npm run verify:hostinger-package && npm run prepare:hostinger-upload",
+    "start": "next start",
+    "lint": "eslint",
+    "qa:funnel": "playwright test tests/satori-funnel.spec.mjs --browser=chromium",
+    "creative:previews": "node scripts/generate-satori-ad-previews.mjs",
+    "creative:carousel": "node scripts/generate-satori-starter-kit-carousel.mjs",
+    "creative:competitor-inspired": "node scripts/generate-satori-competitor-inspired-previews.mjs",
+    "creative:shoot-kit": "node scripts/build-satori-video-shoot-kit.mjs",
+    "meta:upload-kit": "node scripts/build-satori-meta-upload-kit.mjs",
+    "meta:launch-package": "npm run meta:upload-kit && node scripts/build-satori-meta-launch-package.mjs"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.3.2",
+    "lucide-react": "^0.561.0",
+    "next": "^16.2.10",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "tailwindcss": "^4.3.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^25.0.2",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "eslint": "^9.39.2",
+    "eslint-config-next": "^16.2.10",
+    "sharp": "^0.34.5",
+    "typescript": "^6.0.3"
+  },
+  "overrides": {
+    "postcss": "^8.5.16"
+  }
+}

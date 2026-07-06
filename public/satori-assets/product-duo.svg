@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.55" stop-color="#fff2f7"/>
+      <stop offset="1" stop-color="#edf8fb"/>
+    </linearGradient>
+    <linearGradient id="jar" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.55" stop-color="#f8feff"/>
+      <stop offset="1" stop-color="#dff2f7"/>
+    </linearGradient>
+    <linearGradient id="cap" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e7f2f5"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="30" stdDeviation="28" flood-color="#004155" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  
+    <rect width="1200" height="1200" fill="url(#bg)"/>
+    
+    <rect x="90" y="88" width="164" height="48" rx="24" fill="#ffffff" stroke="#d9e3e7"/>
+    <text x="172" y="119" text-anchor="middle" fill="#f77ea7" font-family="Arial, sans-serif" font-size="16" font-weight="700">BEST VALUE</text>
+    
+  <g filter="url(#shadow)">
+    <rect x="286.9" y="300" width="229.6" height="70.52" rx="22.959999999999997" fill="url(#cap)" stroke="#d9e3e7" stroke-width="1.64"/>
+    <rect x="250" y="362.32" width="303.4" height="344.4" rx="37.72" fill="url(#jar)" stroke="#d9e3e7" stroke-width="1.64"/>
+    <text x="401.7" y="468.91999999999996" text-anchor="middle" fill="#4d91aa" font-family="Georgia, serif" font-size="47.559999999999995" letter-spacing="2">SATORI</text>
+    <text x="401.7" y="501.71999999999997" text-anchor="middle" fill="#00657d" font-family="Arial, sans-serif" font-size="13.94">Organic Skin Care</text>
+    <line x1="320.52" y1="527.96" x2="482.88" y2="527.96" stroke="#00657d" stroke-width="1.64"/>
+    <text x="401.7" y="571.42" text-anchor="middle" fill="#004155" font-family="Arial, sans-serif" font-size="19.68" font-weight="700">Satori Cream</text>
+    <text x="401.7" y="605.04" text-anchor="middle" fill="#00657d" font-family="Arial, sans-serif" font-size="13.94">Daily Renewal Cream</text>
+    <text x="401.7" y="641.1199999999999" text-anchor="middle" fill="#00657d" font-family="Arial, sans-serif" font-size="13.94">100 ml</text>
+  </g>
+    
+  <g filter="url(#shadow)">
+    <rect x="579.1" y="240" width="274.4" height="84.28" rx="27.439999999999998" fill="url(#cap)" stroke="#d9e3e7" stroke-width="1.96"/>
+    <rect x="535" y="314.47999999999996" width="362.59999999999997" height="411.59999999999997" rx="45.08" fill="url(#jar)" stroke="#d9e3e7" stroke-width="1.96"/>
+    <text x="716.3" y="441.88" text-anchor="middle" fill="#4d91aa" font-family="Georgia, serif" font-size="56.839999999999996" letter-spacing="2">SATORI</text>
+    <text x="716.3" y="481.08" text-anchor="middle" fill="#00657d" font-family="Arial, sans-serif" font-size="16.66">Organic Skin Care</text>
+    <line x1="619.28" y1="512.4399999999999" x2="813.3199999999999" y2="512.4399999999999" stroke="#00657d" stroke-width="1.96"/>
+    <text x="716.3" y="564.38" text-anchor="middle" fill="#004155" font-family="Arial, sans-serif" font-size="23.52" font-weight="700">Satori Cream</text>
+    <text x="716.3" y="604.56" text-anchor="middle" fill="#00657d" font-family="Arial, sans-serif" font-size="16.66">Daily Renewal Cream</text>
+    <text x="716.3" y="647.68" text-anchor="middle" fill="#00657d" font-family="Arial, sans-serif" font-size="16.66">100 ml</text>
+  </g>
+    <text x="600" y="1030" text-anchor="middle" fill="#004155" font-family="Arial, sans-serif" font-size="38" font-weight="700">60-day ritual duo</text>
+  
+</svg>

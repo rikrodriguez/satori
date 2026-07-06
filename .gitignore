@@ -1,0 +1,54 @@
+.next/
+node_modules/
+out/
+dist/
+coverage/
+playwright-report/
+test-results/
+.DS_Store
+.env*
+!.env.example
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.vercel
+
+# Generated exports and outputs (not for repo)
+exports/
+outputs/
+
+# Working files (not for repo)
+notebooks/
+ChatGPT Image*.png
+*.gs
+create_module_forms.gs
+module-forms-links-felipe.md
+sales-closers-module-quiz-blueprint.md
+
+# Sales course material (not part of the website repo)
+docs/mini-curso-sales-closer-*
+docs/examen-ventas-*
+docs/examen-final-*
+docs/examen-ventas-vendedores-*
+docs/evaluacion-final-sales-closers-*
+docs/proprofs-*
+docs/lms-drive-*
+docs/student-module-summaries/
+docs/M02_Piloto_*
+
+docs/frownies-gap-audit.md
+docs/satori-creative-*
+docs/satori-day-one-*
+docs/satori-final-*
+docs/satori-frownies-*
+docs/satori-growth-os.md
+docs/satori-image-upload-map.md
+docs/satori-meta-*
+docs/satori-prelaunch-*
+docs/satori-sam-*
+docs/satori-video-*
+
+# Internal marketing ad boards (not part of public funnel)
+src/app/ads/
+src/sections/ads/
