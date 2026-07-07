@@ -3,17 +3,16 @@ import { BadgeCheck, FlaskConical, Leaf, Moon, ShieldCheck } from "lucide-react"
 import { Newsletter } from "@/components/newsletter";
 import { ProductVisual, SatoriImageCard } from "@/components/product-visual";
 import { ProductPurchase } from "@/components/product-purchase";
+import { ProductGallery } from "@/components/product-gallery";
 import { faq, testimonials } from "@/lib/store";
 import { absoluteUrl } from "@/lib/seo";
 import {
   pdpBeforeAfterAssets,
   pdpReviewAssets,
   pdpUgcAssets,
-  productGalleryAssets,
   satoriAssets,
 } from "@/lib/visual-assets";
 
-const galleryBadges = ["Science-led", "Daily cream", "Texture", "In hand"];
 
 export const metadata = {
   title: "Satori Cream | Science-Led Anti-Aging Skin Ritual",
@@ -108,18 +107,7 @@ function ProductStructuredData() {
 function ProductHeroSection() {
   return (
     <section className="pdp" id="shop">
-      <div className="pdp-gallery">
-        {productGalleryAssets.map((asset, index) => (
-          <div key={asset.key} className={index === 0 ? "featured" : ""}>
-            <ProductVisual
-              badge={galleryBadges[index]}
-              priority={index === 0}
-              src={asset}
-              variant={index === 0 ? "gallery" : "card"}
-            />
-          </div>
-        ))}
-      </div>
+      <ProductGallery />
       <ProductPurchase />
     </section>
   );
@@ -286,7 +274,7 @@ function ProductRitualStoriesSection() {
       </div>
       <div className="review-grid horizontal">
         {testimonials.map((review, index) => (
-          <article key={review.name}>
+          <article key={review.name + "-" + index}>
             <SatoriImageCard
               asset={pdpReviewAssets[index % pdpReviewAssets.length]}
               className="review-avatar-card"
@@ -341,7 +329,7 @@ function ProductRitualNotesSection() {
       </div>
       <div className="review-grid">
         {testimonials.map((review, index) => (
-          <article key={review.name}>
+          <article key={review.name + "-" + index}>
             <SatoriImageCard
               asset={pdpReviewAssets[index % pdpReviewAssets.length]}
               className="review-avatar-card"

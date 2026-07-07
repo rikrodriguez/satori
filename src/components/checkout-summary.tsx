@@ -227,8 +227,8 @@ export function CheckoutSummary() {
             <span className="eyebrow">Ritual Stories</span>
             <h2>Trusted nightly rituals</h2>
             <div className="checkout-testimonial-list">
-              {testimonials.slice(0, 3).map((review) => (
-                <article className="checkout-testimonial" key={review.name}>
+              {testimonials.slice(0, 3).map((review, index) => (
+                <article className="checkout-testimonial" key={review.name + "-" + index}>
                   <span>Ritual story</span>
                   <p>&quot;{review.body}&quot;</p>
                   <strong>{review.name}</strong>

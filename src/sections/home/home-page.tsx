@@ -175,8 +175,8 @@ function HomeReviewsSection() {
         <h2>The tone and density of a beauty brand built to convert.</h2>
       </div>
       <div className="review-grid">
-        {testimonials.map((review) => (
-          <article key={review.name}>
+        {testimonials.map((review, index) => (
+          <article key={review.name + "-" + index}>
             <span>Ritual note</span>
             <h3>&quot;{review.title}&quot;</h3>
             <p>{review.body}</p>

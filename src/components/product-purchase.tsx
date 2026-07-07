@@ -32,8 +32,8 @@ export function ProductPurchase() {
   return (
     <div className="purchase-card">
       <div className="rating-row">
-        <span>Satori ritual</span>
-        <a href="#reviews">Read ritual notes</a>
+        <span className="stars" aria-label="4.9 out of 5 stars">★★★★★</span>
+        <a href="#reviews">2,000+ ritual reviews</a>
       </div>
       <h1>{heroProduct.name}</h1>
       <p className="product-subtitle">{heroProduct.subtitle}</p>
