@@ -2,7 +2,7 @@
 # Safe Apache rules for static Next.js HTML, assets, images, and fonts.
 
 DirectoryIndex index.html
-ErrorDocument 404 /404/index.html
+ErrorDocument 404 /satori/404/index.html
 
 <IfModule mod_mime.c>
   AddType image/avif .avif

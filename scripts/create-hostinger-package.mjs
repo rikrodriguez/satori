@@ -81,7 +81,9 @@ Generated package files:
 - Full editable source: \`${sourceZip}\` (${formatMb(statSync(sourceZip).size)})
 - Complete code ZIP alias: \`${completeCodeZip}\` (${formatMb(statSync(completeCodeZip).size)})
 
-Upload this file to Hostinger \`public_html\`:
+Upload this file's contents into Hostinger \`public_html/satori/\` (the
+site lives at itotalsupply.com/satori/ — do not upload to the
+\`public_html\` root):
 
 \`\`\`text
 exports/hostinger/satori-hostinger-static-upload.zip

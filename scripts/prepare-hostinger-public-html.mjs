@@ -92,15 +92,19 @@ writeFileSync(
   uploadReadme,
   `# Hostinger Public HTML Upload
 
-Upload the **contents** of this folder to Hostinger \`public_html\`:
+Upload the **contents** of this folder into \`public_html/satori/\` (NOT
+the root of \`public_html\` — the site lives at itotalsupply.com/satori/,
+and every asset path is prefixed with \`/satori/\`, so the files must
+physically sit inside a \`satori\` subfolder or requests will 404):
 
 \`\`\`text
 ${uploadDir}
 \`\`\`
 
-Do not upload the parent folder itself. The root of \`public_html\` should
-contain \`index.html\`, \`.htaccess\`, \`_next/\`, \`images/\`, \`robots.txt\`,
-and \`sitemap.xml\`.
+Do not upload the parent folder itself, and do not upload these files to
+the \`public_html\` root — that would overwrite the rest of the domain.
+\`public_html/satori/\` should end up containing \`index.html\`, \`.htaccess\`,
+\`_next/\`, \`images/\`, \`robots.txt\`, and \`sitemap.xml\`.
 
 Prepared folder summary:
 
