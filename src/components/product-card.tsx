@@ -34,7 +34,14 @@ export function ProductCard({
         <p>{product.subtitle}</p>
         <div className="card-price">
           <strong>{formatPrice(product.price)}</strong>
-          <span>Member {formatPrice(product.memberPrice)}</span>
+          {product.memberPrice &&
+          product.memberPrice < product.price &&
+          product.type !== "membership" ? (
+            <span>Member {formatPrice(product.memberPrice)}</span>
+          ) : null}
+          {product.savingsLabel ? (
+            <span className="savings-label">{product.savingsLabel}</span>
+          ) : null}
         </div>
         <button
           className="button teal full"

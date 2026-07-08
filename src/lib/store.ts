@@ -12,12 +12,14 @@ export type Product = {
   name: string;
   subtitle: string;
   price: number;
-  memberPrice: number;
-  subscriptionPrice: number;
+  memberPrice: number | null;
+  subscriptionPrice: number | null;
   image: SatoriVisualAsset;
   images: SatoriVisualAsset[];
   cartImage: SatoriVisualAsset;
   badge: string;
+  savingsLabel?: string | null;
+  type?: "membership";
   handle: string;
 };
 
@@ -46,13 +48,14 @@ export const heroProduct: Product = {
   name: "Satori Cream",
   subtitle:
     "Science-led skincare ritual for smoother-looking texture, hydration, and calmer-looking skin.",
-  price: 39.99,
-  memberPrice: 35.99,
-  subscriptionPrice: 33.99,
+  price: 19.99,
+  memberPrice: 17.99,
+  subscriptionPrice: 16.99,
   image: productImages[0],
   images: productImages,
   cartImage: cartAssets.thumbnail,
   badge: "Science-Led Cream",
+  savingsLabel: null,
   handle: "/products/satori-cream",
 };
 
@@ -62,39 +65,43 @@ export const bundles: Product[] = [
     id: "satori-duo",
     name: "Satori Duo",
     subtitle: "Two jars for a consistent 60-day skin-smoothing ritual.",
-    price: 69.99,
-    memberPrice: 62.99,
-    subscriptionPrice: 59.49,
+    price: 34.99,
+    memberPrice: 31.99,
+    subscriptionPrice: 29.99,
     image: satoriPackAssets.duo,
     images: productImages.slice(0, 4),
     cartImage: satoriPackAssets.duo,
     badge: "Best Value",
+    savingsLabel: "Save $5",
     handle: "/products/satori-cream",
   },
   {
     id: "satori-ritual",
     name: "Satori Ritual Kit",
     subtitle: "A 90-day supply of the nightly cream ritual, built for consistency.",
-    price: 99.99,
-    memberPrice: 89.99,
-    subscriptionPrice: 84.99,
+    price: 49.99,
+    memberPrice: 44.99,
+    subscriptionPrice: 39.99,
     image: satoriPackAssets.ritual,
     images: productImages.slice(0, 4),
     cartImage: satoriPackAssets.ritual,
     badge: "Start Here",
+    savingsLabel: "Save $10",
     handle: "/products/satori-cream",
   },
   {
     id: "golden-skin-club",
     name: "Satori Golden Skin Club",
     subtitle: "Annual membership with member pricing, gifts, and early access.",
-    price: 45,
-    memberPrice: 45,
-    subscriptionPrice: 45,
+    price: 29.99,
+    memberPrice: null,
+    subscriptionPrice: null,
     image: satoriPackAssets.goldenClub,
     images: productImages.slice(0, 4),
     cartImage: satoriPackAssets.goldenClub,
     badge: "Membership",
+    savingsLabel: null,
+    type: "membership",
     handle: "/pages/golden-standard-membership-info",
   },
 ];

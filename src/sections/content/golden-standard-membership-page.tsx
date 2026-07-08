@@ -30,7 +30,7 @@ const membershipPlans = [
   },
   {
     name: "Golden",
-    price: "$45/year",
+    price: "$29.99/year",
     eyebrow: "Best value",
     body:
       "The paid annual membership for customers who want member pricing and VIP-style benefits.",
@@ -65,7 +65,7 @@ export default function MembershipPage() {
           </p>
           <div className="membership-actions">
             <Link className="button teal" href="/products/satori-cream">
-              Go Golden ($45/year)
+              Go Golden ($29.99/year)
             </Link>
             <Link className="button ghost" href="#pricing">
               Compare Plans

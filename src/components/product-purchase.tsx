@@ -15,7 +15,10 @@ export function ProductPurchase() {
   const [frequency, setFrequency] = useState(frequencies[0]);
   const [quantity, setQuantity] = useState(1);
 
-  const price = plan === "subscribe" ? heroProduct.subscriptionPrice : heroProduct.price;
+  const price =
+    plan === "subscribe" && heroProduct.subscriptionPrice
+      ? heroProduct.subscriptionPrice
+      : heroProduct.price;
   const sellingPlan = plan === "subscribe" ? `Subscribe and Save 15% - ${frequency}` : undefined;
 
   const total = useMemo(() => price * quantity, [price, quantity]);
@@ -39,7 +42,14 @@ export function ProductPurchase() {
       <p className="product-subtitle">{heroProduct.subtitle}</p>
       <div className="price-row">
         <strong>{formatPrice(heroProduct.price)}</strong>
-        <span>Golden Member Price: {formatPrice(heroProduct.memberPrice)}</span>
+        {heroProduct.memberPrice &&
+        heroProduct.memberPrice < heroProduct.price &&
+        heroProduct.type !== "membership" ? (
+          <span>Golden Member Price: {formatPrice(heroProduct.memberPrice)}</span>
+        ) : null}
+        {heroProduct.savingsLabel ? (
+          <span className="savings-label">{heroProduct.savingsLabel}</span>
+        ) : null}
       </div>
 
       <div className="purchase-options">
@@ -64,7 +74,9 @@ export function ProductPurchase() {
             <Check size={16} />
             Subscribe and Save 15%
           </span>
-          <strong>{formatPrice(heroProduct.subscriptionPrice)}</strong>
+          <strong>
+            {formatPrice(heroProduct.subscriptionPrice ?? heroProduct.price)}
+          </strong>
         </button>
       </div>
 
