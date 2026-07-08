@@ -21,6 +21,14 @@ jobs:
       - name: Install zip/unzip
         run: sudo apt-get update && sudo apt-get install -y zip unzip
 
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Pillow (WebP generation)
+        run: pip install Pillow
+
       - name: Install dependencies
         run: npm ci
 
