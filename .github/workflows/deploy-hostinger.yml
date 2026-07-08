@@ -1,0 +1,36 @@
+name: Build and publish Hostinger deploy branch
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install zip/unzip
+        run: sudo apt-get update && sudo apt-get install -y zip unzip
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Hostinger static package
+        run: npm run package:hostinger
+
+      - name: Publish built site to hostinger-deploy branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: hostinger-deploy
+          publish_dir: ./exports/hostinger/public_html_upload
+          force_orphan: true
