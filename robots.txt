@@ -1,0 +1,7 @@
+User-Agent: *
+Allow: /
+Disallow: /checkout
+Disallow: /thank-you
+Disallow: /ads
+
+Sitemap: https://satoriorganicskincare.com/sitemap.xml
