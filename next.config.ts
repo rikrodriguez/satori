@@ -1,9 +1,11 @@
 import type { NextConfig } from "next";
 
 const isHostingerStaticExport = process.env.NEXT_OUTPUT === "export";
+const hostingerBasePath = "/satori";
 
 const nextConfig: NextConfig = {
   output: isHostingerStaticExport ? "export" : undefined,
+  basePath: isHostingerStaticExport ? hostingerBasePath : undefined,
   trailingSlash: isHostingerStaticExport,
   images: {
     deviceSizes: [390, 640, 750, 828, 1080, 1200, 1440, 1920],

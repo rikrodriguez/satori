@@ -16,7 +16,7 @@ Then upload:
 exports/hostinger/satori-hostinger-static-upload.zip
 ```
 
-Extract that ZIP into Hostinger's `public_html` folder.
+Extract that ZIP into Hostinger's `public_html/satori` folder.
 
 The package command also creates an expanded upload folder:
 
@@ -24,8 +24,8 @@ The package command also creates an expanded upload folder:
 exports/hostinger/public_html_upload
 ```
 
-If using that folder, upload the contents of the folder into `public_html`, not
-the folder itself.
+If using that folder, upload the contents of the folder into
+`public_html/satori`, not the folder itself.
 
 This option is fastest for a marketing/ecommerce demo because it serves static
 HTML, CSS, JavaScript, and images without a Node.js server.

@@ -3,6 +3,7 @@ import { extname, join, posix, relative, resolve, sep } from "node:path";
 
 const root = process.cwd();
 const outDir = resolve(root, "out");
+const deploymentBasePath = "/satori";
 const ignoredTopLevelDirs = new Set(["_next", "ads", "creative", "satori-assets"]);
 const internalPhrases = [
   "Reserved slot",
@@ -45,7 +46,13 @@ function isSkippableUrl(value) {
 }
 
 function candidateFiles(urlPath) {
-  const cleanPath = decodeURI(urlPath.split("?")[0].split("#")[0]);
+  let cleanPath = decodeURI(urlPath.split("?")[0].split("#")[0]);
+  if (
+    cleanPath === deploymentBasePath ||
+    cleanPath.startsWith(`${deploymentBasePath}/`)
+  ) {
+    cleanPath = cleanPath.slice(deploymentBasePath.length) || "/";
+  }
   const safePath = posix.normalize(cleanPath.startsWith("/") ? cleanPath.slice(1) : cleanPath);
   const absolute = resolve(outDir, safePath);
   const ext = extname(safePath);
@@ -95,6 +102,12 @@ function extractUrls(html) {
   return urls;
 }
 
+function extractAnchorHrefs(html) {
+  return [...html.matchAll(/<a\b[^>]*\bhref=["']([^"']+)["']/g)].map(
+    (match) => match[1].replaceAll("&amp;", "&"),
+  );
+}
+
 if (!existsSync(resolve(outDir, "index.html"))) {
   throw new Error("Missing out/index.html. Run npm run build:hostinger first.");
 }
@@ -102,6 +115,7 @@ if (!existsSync(resolve(outDir, "index.html"))) {
 const htmlFiles = walk(outDir).filter((file) => file.endsWith(".html"));
 const missing = [];
 const phraseHits = [];
+const unprefixedNavigation = [];
 
 for (const htmlFile of htmlFiles) {
   const html = readFileSync(htmlFile, "utf8");
@@ -119,9 +133,20 @@ for (const htmlFile of htmlFiles) {
       missing.push(`${htmlRelative} -> ${rawUrl}`);
     }
   }
+
+  for (const href of extractAnchorHrefs(html)) {
+    if (
+      href.startsWith("/") &&
+      !href.startsWith("//") &&
+      href !== deploymentBasePath &&
+      !href.startsWith(`${deploymentBasePath}/`)
+    ) {
+      unprefixedNavigation.push(`${htmlRelative} -> ${href}`);
+    }
+  }
 }
 
-if (missing.length || phraseHits.length) {
+if (missing.length || phraseHits.length || unprefixedNavigation.length) {
   console.error("Hostinger static audit failed.");
   if (missing.length) {
     console.error("\nMissing internal targets:");
@@ -130,6 +155,10 @@ if (missing.length || phraseHits.length) {
   if (phraseHits.length) {
     console.error("\nInternal/incomplete copy found:");
     for (const item of phraseHits) console.error(`- ${item}`);
+  }
+  if (unprefixedNavigation.length) {
+    console.error(`\nNavigation missing ${deploymentBasePath} base path:`);
+    for (const item of unprefixedNavigation) console.error(`- ${item}`);
   }
   process.exit(1);
 }
